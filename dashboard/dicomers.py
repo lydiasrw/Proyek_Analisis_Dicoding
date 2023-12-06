@@ -48,7 +48,7 @@ def create_sum_customer_df(df):
 
 # Load cleaned data
 
-commerce_df = pd.read_csv("commerce_df.csv")
+commerce_df = pd.read_csv("https://github.com/lydiasrw/Proyek_Analisis_Dicoding/blob/main/dashboard/commerce_df.csv")
 
 date_columns=["order_purchase_timestamp"]
 commerce_df.sort_values(by="order_purchase_timestamp", inplace=True)
