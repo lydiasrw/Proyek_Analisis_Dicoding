@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sn
 import streamlit as st
 from babel.numbers import format_currency
+from PIL import GifImagePlugin, Image, ImageFile
 
 sn.set(style="dark")
 
@@ -218,6 +219,6 @@ st.pyplot(fig)
 
 
 
-st.caption("Copyright @Dico Clothing 2023")
+st.caption("Copyright @Dicomer 2023")
 
 
