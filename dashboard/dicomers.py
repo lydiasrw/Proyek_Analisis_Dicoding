@@ -67,7 +67,7 @@ with st.sidebar:
 
     # Add logo
     st.title("Welcome")
-    st.image("https://github.com/lydiasrw/Proyek_Analisis_Dicoding/blob/097a81415da84c52d72d9ce431d1e0ff0b90bdc7/dashboard/Dico.png")
+    st.image("dashboard/Dico.png")
 
     # Getting start date and end date from data input
     start_date, end_date = st.date_input(
