@@ -3,10 +3,6 @@ import matplotlib.pyplot as plt
 import seaborn as sn
 import streamlit as st
 from babel.numbers import format_currency
-from PIL import GifImagePlugin, Image, ImageFile
-
-sn.set(style="dark")
-
 
 def create_month_order_df(df):
     month_order_df = df.resample(rule="M", on="order_purchase_timestamp").agg({
