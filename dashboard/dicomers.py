@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sn
 import streamlit as st
 from babel.numbers import format_currency
+from PIL import GifImagePlugin, Image, ImageFile
 
 def create_month_order_df(df):
     month_order_df = df.resample(rule="M", on="order_purchase_timestamp").agg({
@@ -66,7 +67,7 @@ with st.sidebar:
 
     # Add logo
     st.title("Welcome")
-    st.image("https://github.com/lydiasrw/Proyek_Analisis_Dicoding/blob/main/dashboard/Dico.png")
+    st.image("https://github.com/lydiasrw/Proyek_Analisis_Dicoding/blob/097a81415da84c52d72d9ce431d1e0ff0b90bdc7/dashboard/Dico.png")
 
     # Getting start date and end date from data input
     start_date, end_date = st.date_input(
